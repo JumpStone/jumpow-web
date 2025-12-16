@@ -377,9 +377,10 @@
         border: 1px solid var(--border-color);
         background: transparent;
         color: var(--text-main);
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 6px;
+        width: fit-content;
       }
 
       .btn-small:hover {
