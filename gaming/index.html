@@ -101,12 +101,19 @@
               var footer = [
                 '<footer style="margin-top: 80px; padding-top: 20px; border-top: 1px solid #27272a;">',
                 '<div style="text-align: center; font-size: 0.9rem; color: #a1a1aa;">',
-                '<a href="https://jumpstone4477.de">JumpStone Website</a> © 2025 by <a href="https://jumpstone4477.de">JumpStone</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>',
+                "<p>",
+                '<a href="https://jumpstone4477.de">JumpStone Website</a> © 2026 by ',
+                '<a href="https://jumpstone4477.de">JumpStone</a> is licensed under ',
+                '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0</a>',
+                "</p>",
                 '<p><a target="_blank" href="https://jumpstone4477.de">Developed with ❤ by JumpStone</a></p>',
+                '<p style="font-size: 0.75rem; opacity: 0.8;">',
+                'Powered by <a href="https://docsify.js.org/" target="_blank">Docsify</a> (MIT License). ',
+                'Theme contains <a href="https://github.com/docsifyjs/docsify/blob/develop/LICENSE" target="_blank">MIT licensed code</a>.',
+                "</p>",
                 "</div>",
                 "</footer>",
               ].join("");
-
               next(html + footer);
             });
           },
