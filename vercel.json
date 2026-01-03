@@ -5,6 +5,10 @@
       "destination": "https://js-gaming.vercel.app/"
     },
     {
+      "source": "/gaming/",
+      "destination": "https://js-gaming.vercel.app/"
+    },
+    {
       "source": "/gaming/:path*",
       "destination": "https://js-gaming.vercel.app/:path*"
     }
