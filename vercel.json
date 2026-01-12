@@ -12,5 +12,15 @@
       "source": "/gaming/:path*",
       "destination": "https://js-gaming.vercel.app/:path*"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/gaming",
+      "destination": "/gaming/#/README"
+    },
+    {
+      "source": "/gaming/launcher",
+      "destination": "/gaming/launcher/#/README"
+    }
   ]
 }
