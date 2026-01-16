@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /ljumpstone4477de/
 Disallow: /gaming/launcher
 Disallow: /gaming/api/
 Allow: /
