@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/gaming"
+  to = "https://js-gaming.vercel.app/"
+  status = 200
+
+[[redirects]]
+  from = "/gaming/*"
+  to = "https://js-gaming.vercel.app/:splat"
+  status = 200
