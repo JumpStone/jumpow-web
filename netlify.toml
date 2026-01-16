@@ -7,3 +7,8 @@
   from = "/gaming/*"
   to = "https://js-gaming-website.netlify.app/:splat"
   status = 200
+
+[[redirects]]
+  from = "/gaming"
+  to = "https://jumpstone4477.de/gaming/#/README"
+  status = 302
