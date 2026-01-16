@@ -5,12 +5,3 @@ Disallow: /gaming/api/
 Allow: /
 
 Sitemap: https://jumpstone4477.de/sitemap.xml
-
-# Crawl-delay: 10
-
-# Specific bots
-User-agent: Googlebot
-Disallow: /ljumpstone4477de/
-
-User-agent: Bingbot
-Disallow: /ljumpstone4477de/
