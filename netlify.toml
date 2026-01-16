@@ -1,9 +1,9 @@
 [[redirects]]
   from = "/gaming"
-  to = "https://js-gaming.vercel.app/"
+  to = "https://js-gaming-website.netlify.app/"
   status = 200
 
 [[redirects]]
   from = "/gaming/*"
-  to = "https://js-gaming.vercel.app/:splat"
+  to = "https://js-gaming-website.netlify.app/:splat"
   status = 200
