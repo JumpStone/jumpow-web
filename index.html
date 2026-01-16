@@ -3,7 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
     <title>Henry | JumpStone</title>
+    <meta
+      name="title"
+      content="Henry JumpStone - Developer & Hardware Enthusiast aus Osnabrück"
+    />
+    <meta
+      name="description"
+      content="Portfolio von Henry JumpStone - Software Developer und Hardware Enthusiast aus Osnabrück. Spezialisiert auf Webentwicklung, Systemadministration und innovative Technikprojekte."
+    />
+    <meta
+      name="keywords"
+      content="Henry JumpStone, Developer, Software Engineer, Hardware Enthusiast, Web Development, System Administration, Osnabrück, Germany, Programming, Tech Projects"
+    />
+    <meta name="author" content="Henry JumpStone" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="German" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jumpstone4477.de/" />
+    <meta
+      property="og:title"
+      content="Henry JumpStone - Developer & Hardware Enthusiast"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio von Henry JumpStone - Software Developer und Hardware Enthusiast aus Osnabrück. Spezialisiert auf Webentwicklung, Systemadministration und innovative Technikprojekte."
+    />
+    <meta
+      property="og:image"
+      content="https://jumpstone4477.de/assets/img/logo-new.png"
+    />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jumpstone4477.de/" />
+    <meta
+      property="twitter:title"
+      content="Henry JumpStone - Developer & Hardware Enthusiast"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio von Henry JumpStone - Software Developer und Hardware Enthusiast aus Osnabrück. Spezialisiert auf Webentwicklung, Systemadministration und innovative Technikprojekte."
+    />
+    <meta
+      property="twitter:image"
+      content="https://jumpstone4477.de/assets/img/logo-new.png"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jumpstone4477.de/" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Henry JumpStone",
+        "url": "https://jumpstone4477.de/",
+        "sameAs": [
+          "https://github.com/jumpstone",
+          "https://codeberg.org/jumpstone",
+          "https://discord.com/users/1008346032230387752"
+        ],
+        "jobTitle": "Software Developer & Hardware Enthusiast",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "JumpStone"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Osnabrück",
+          "addressCountry": "DE"
+        },
+        "description": "Software Developer und Hardware Enthusiast aus Osnabrück, spezialisiert auf Webentwicklung, Systemadministration und innovative Technikprojekte."
+      }
+    </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,10 +108,12 @@
           />
           JumpStone4477
         </a>
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/gaming">JS Gaming</a></li>
-        </ul>
+        <nav aria-label="Hauptnavigation">
+          <ul class="nav-links">
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/gaming">JS Gaming</a></li>
+          </ul>
+        </nav>
         <!-- Social Media Buttons -->
         <div class="social-card">
           <a
@@ -87,8 +169,10 @@
     <div class="container">
       <section class="hero">
         <span class="hero-badge">Portfolio 2025</span>
-        <h1>Moin, ich bin <span class="hero-name">Henry</span>.</h1>
-        <p class="hero-desc">Developer & Hardware Enthusiast aus Osnabrück.</p>
+        <h1>Moin, ich bin <span class="hero-name">Henry JumpStone</span>.</h1>
+        <p class="hero-desc">
+          Software Developer & Hardware Enthusiast aus Osnabrück
+        </p>
 
         <div class="social-links">
           <a
@@ -209,27 +293,30 @@
       </section>
 
       <footer>
-        <a href="https://jumpstone4477.de/">JumpStone Website</a> © 2025 - 2026
-        by <a href="https://jumpstone4477.de/">JumpStone</a> is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          >CC BY-NC-SA 4.0</a
-        ><img
-          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-          alt=""
-          style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
-        /><img
-          src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-          alt=""
-          style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
-        /><img
-          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
-          alt=""
-          style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
-        /><img
-          src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-          alt=""
-          style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
-        />
+        <nav aria-label="Footer Navigation">
+          <a href="https://jumpstone4477.de/">JumpStone Website</a> © 2025 -
+          2026 by <a href="https://jumpstone4477.de/">JumpStone</a> is licensed
+          under
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY-NC-SA 4.0</a
+          ><img
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+            alt="Creative Commons"
+            style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
+          /><img
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+            alt="Attribution"
+            style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
+          /><img
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
+            alt="Non Commercial"
+            style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
+          /><img
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+            alt="Share Alike"
+            style="max-width: 1em; max-height: 1em; margin-left: 0.2em"
+          />
+        </nav>
       </footer>
     </div>
 
