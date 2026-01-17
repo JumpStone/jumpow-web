@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Code of Conduct - Henry | JumpStone</title>
+    <meta
+      name="title"
+      content="Code of Conduct - JumpStone Community Guidelines"
+    />
+    <meta
+      name="description"
+      content="The Code of Conduct for JumpStone sets the standards for respectful and inclusive behavior across all community areas. Learn about our community guidelines."
+    />
+    <meta
+      name="keywords"
+      content="Code of Conduct, Community Guidelines, JumpStone, JumpStone-Gaming, Respect, Inclusion, Community"
+    />
+    <meta name="author" content="Henry JumpStone" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="30 days" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://jumpstone4477.de/code-of-conduct.html"
+    />
+    <meta
+      property="og:title"
+      content="Code of Conduct - JumpStone Community Guidelines"
+    />
+    <meta
+      property="og:description"
+      content="Community guidelines from JumpStone for respectful and inclusive behavior."
+    />
+    <meta
+      property="og:image"
+      content="https://jumpstone4477.de/assets/img/logo-new.png"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://jumpstone4477.de/code-of-conduct.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Code of Conduct - JumpStone Community Guidelines"
+    />
+    <meta
+      property="twitter:description"
+      content="Community guidelines from JumpStone for respectful and inclusive behavior."
+    />
+    <meta
+      property="twitter:image"
+      content="https://jumpstone4477.de/assets/img/logo-new.png"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://jumpstone4477.de/code-of-conduct.html"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Code of Conduct - JumpStone",
+        "url": "https://jumpstone4477.de/code-of-conduct.html",
+        "description": "Community guidelines from JumpStone for respectful and inclusive behavior.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "JumpStone",
+          "url": "https://jumpstone4477.de/"
+        },
+        "inLanguage": "en"
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/socials.css" />
+    <link rel="icon" href="/assets/img/logo-new.png" type="image/x-icon" />
+
+    <style>
+      /* Custom styles for Code of Conduct page */
+      .coc-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .coc-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .coc-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #fff, var(--accent-primary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .coc-header p {
+        font-size: 1.2rem;
+        color: var(--text-muted);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .coc-section {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .coc-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .coc-section h2::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--accent-primary);
+        box-shadow: 0 0 12px var(--accent-primary);
+      }
+
+      .coc-section h3 {
+        font-size: 1.4rem;
+        margin: 1.5rem 0 1rem;
+        color: var(--text-main);
+      }
+
+      .coc-section ul {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      .coc-section li {
+        margin-bottom: 0.8rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      .coc-section p {
+        margin-bottom: 1rem;
+        line-height: 1.7;
+      }
+
+      .positive-examples,
+      .negative-examples {
+        background: rgba(16, 185, 129, 0.1);
+        border-left: 4px solid var(--accent-primary);
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 1.5rem 0;
+      }
+
+      .negative-examples {
+        background: rgba(239, 68, 68, 0.1);
+        border-left-color: #ef4444;
+      }
+
+      .examples-title {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .positive-examples .examples-title {
+        color: var(--accent-primary);
+      }
+
+      .negative-examples .examples-title {
+        color: #ef4444;
+      }
+
+      .contact-info {
+        background: rgba(59, 130, 246, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .contact-info a {
+        color: #3b82f6;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .contact-info a:hover {
+        color: #60a5fa;
+      }
+
+      .last-updated {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+      }
+
+      @media (max-width: 768px) {
+        .coc-container {
+          padding: 1rem;
+        }
+
+        .coc-header h1 {
+          font-size: 2rem;
+        }
+
+        .coc-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-bg"></div>
+
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <div class="header-content">
+        <a href="/" class="logo">
+          <img
+            src="/assets/img/logo-new.png"
+            alt="JumpStone Logo"
+            class="logo-img"
+          />
+          JumpStone4477
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/gaming">JS Gaming</a></li>
+          </ul>
+        </nav>
+        <!-- Social Media Buttons -->
+        <div class="social-card">
+          <a
+            href="https://github.com/jumpstone"
+            class="Btn github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="svgContainer">
+              <img
+                src="/assets/img/badges/github-mark-white.png"
+                alt="GitHub"
+                class="social-icon"
+              />
+            </span>
+            <span class="BG"></span>
+          </a>
+
+          <a
+            href="https://codeberg.org/jumpstone"
+            class="Btn codeberg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="svgContainer">
+              <img
+                src="/assets/img/badges/codeberg-logo_icon_white-512x512.png"
+                alt="Codeberg"
+                class="social-icon"
+              />
+            </span>
+            <span class="BG"></span>
+          </a>
+
+          <a
+            href="https://discord.gg/yKU4Q2mHj8"
+            class="Btn discord"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="svgContainer">
+              <img
+                src="/assets/img/badges/Discord-Symbol-White-square.png"
+                alt="Discord"
+                class="social-icon"
+              />
+            </span>
+            <span class="BG"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="coc-container">
+        <header class="coc-header">
+          <h1>Contributor Covenant Code of Conduct</h1>
+          <p>
+            Community guidelines for respectful and inclusive interaction across
+            all JumpStone and JumpStone-Gaming areas
+          </p>
+        </header>
+
+        <section class="coc-section">
+          <h2>Our Pledge</h2>
+          <p>
+            I, as the maintainer of <strong>JumpStone</strong> and
+            <strong>JumpStone-Gaming</strong>, am committed to providing a
+            friendly, safe, and welcoming environment for all, regardless of
+            level of experience, gender identity and expression, sexual
+            orientation, disability, personal appearance, body size, race,
+            ethnicity, age, religion, or nationality.
+          </p>
+        </section>
+
+        <section class="coc-section">
+          <h2>Our Standards</h2>
+
+          <div class="positive-examples">
+            <div class="examples-title">
+              <span>✓</span> Examples of behavior that contributes to a positive
+              environment include:
+            </div>
+            <ul>
+              <li>Using welcoming and inclusive language.</li>
+              <li>Being respectful of differing viewpoints and experiences.</li>
+              <li>Gracefully accepting constructive criticism.</li>
+              <li>Focusing on what is best for the community.</li>
+              <li>Showing empathy towards other community members.</li>
+            </ul>
+          </div>
+
+          <div class="negative-examples">
+            <div class="examples-title">
+              <span>✗</span> Examples of unacceptable behavior include:
+            </div>
+            <ul>
+              <li>
+                The use of sexualized language or imagery and unwelcome sexual
+                attention or advances.
+              </li>
+              <li>
+                Trolling, insulting/derogatory comments, and personal or
+                political attacks.
+              </li>
+              <li>Public or private harassment.</li>
+              <li>
+                Publishing others' private information, such as a physical or
+                electronic address, without explicit permission.
+              </li>
+              <li>
+                Other conduct which could reasonably be considered inappropriate
+                in a professional setting.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="coc-section">
+          <h2>Scope</h2>
+          <p>
+            This Code of Conduct applies within all project spaces managed by
+            <strong>JumpStone</strong> and <strong>JumpStone-Gaming</strong>,
+            and it also applies when an individual is representing the project
+            or its community in public spaces. Examples of representing a
+            project or community include using an official project e-mail
+            address, posting via an official social media account, or acting as
+            an appointed representative at an online or offline event.
+          </p>
+        </section>
+
+        <section class="coc-section">
+          <h2>Enforcement</h2>
+          <p>
+            Responsibilities for clarifying the standards of acceptable behavior
+            and taking appropriate and fair corrective action in response to any
+            instances of unacceptable behavior lie with the project maintainers.
+          </p>
+
+          <div class="contact-info">
+            <p>
+              If you experience or witness unacceptable behavior, please report
+              it to the maintainers at:
+              <a href="mailto:hi@jumpstone4477.de">hi@jumpstone4477.de</a>
+            </p>
+            <p>
+              All complaints will be reviewed and investigated and will result
+              in a response that is deemed necessary and appropriate to the
+              circumstances. The project team is obligated to maintain
+              confidentiality with regard to the reporter of an incident.
+            </p>
+          </div>
+        </section>
+
+        <section class="coc-section">
+          <h2>Attribution</h2>
+          <p>
+            This Code of Conduct is adapted from the
+            <a
+              href="https://www.contributor-covenant.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contributor Covenant</a
+            >, version 2.1, available at
+            <a
+              href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.contributor-covenant.org/version/2/1/code_of_conduct.html </a
+            >.
+          </p>
+        </section>
+
+        <div class="last-updated">Last Updated: January 2026</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Navigation Links -->
+          <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/gaming">JS Gaming</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal Links -->
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul class="footer-links">
+              <li><a href="/legal.html">Legal</a></li>
+              <li><a href="/code-of-conduct.html">Code of Conduct</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:hi@jumpstone4477.de">hi@jumpstone4477.de</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/yKU4Q2mHj8" target="_blank"
+                  >Discord Server</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Netlify -->
+          <div class="footer-column">
+            <h3>Deploys by Netlify</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.netlify.com" target="_blank">
+                  <img
+                    src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg"
+                    alt="Deploys by Netlify"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <nav aria-label="Footer Navigation">
+            <a href="https://jumpstone4477.de/">JumpStone Website</a> © 2025 -
+            2026 by <a href="https://jumpstone4477.de/">JumpStone</a> is
+            licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >CC BY-NC-SA 4.0</a
+            >
+            <p>
+              <a target="_blank" href="https://jumpstone4477.de"
+                >Developed with ❤ by JumpStone</a
+              >
+            </p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
