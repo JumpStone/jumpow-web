@@ -1,14 +1,16 @@
 [[redirects]]
-  from = "/gaming"
-  to = "https://js-gaming-website.netlify.app/"
-  status = 200
-
-[[redirects]]
   from = "/gaming/*"
   to = "https://js-gaming-website.netlify.app/:splat"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/gaming"
-  to = "https://jumpstone4477.de/gaming/#/README"
-  status = 302
+  to = "https://js-gaming-website.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
