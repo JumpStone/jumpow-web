@@ -4,7 +4,7 @@ Welcome to my personal portfolio website showcasing my work as a Software Develo
 
 <p align="center">
   <a href="https://jumpstone4477.de/">
-    <img src="./assets/img/logo-new.png" width="128" height="128" alt="JumpStone Logo">
+    <img src="./assets/img/logo-new-big.png" width="128" height="128" alt="JumpStone Logo">
   </a>
 </p>
 
