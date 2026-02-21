@@ -12,13 +12,13 @@
 
 [[redirects]]
   from = "/devreadme/*"
-  to = "https://splendid-melba-59c659.netlify.app/:splat"
+  to = "https://devreadme-website.netlify.app/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "/devreadme"
-  to = "https://splendid-melba-59c659.netlify.app/"
+  to = "https://devreadme-website.netlify.app/"
   status = 200
   force = true
 
