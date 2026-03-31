@@ -23,9 +23,25 @@
   padding: 0.5rem 0.7rem;
   border: 3px solid var(--ink);
   background: #8bf7ff;
+  color: #101010;
   font-family: var(--font-mono);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.positive-examples,
+.negative-examples,
+.positive-examples p,
+.negative-examples p,
+.positive-examples li,
+.negative-examples li,
+.positive-examples a,
+.negative-examples a,
+.contact-info,
+.contact-info p,
+.contact-info li,
+.contact-info a {
+  color: #101010;
 }
 
 .examples-title {

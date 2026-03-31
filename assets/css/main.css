@@ -264,6 +264,18 @@ a {
   font-family: var(--font-mono);
 }
 
+.legal-section p,
+.legal-section li,
+.legal-section .contact-item,
+.legal-section .contact-item a,
+.coc-header p,
+.coc-section p,
+.coc-section li,
+.coc-section p a,
+.last-updated {
+  font-family: "Calibri", "Segoe UI", sans-serif;
+}
+
 .projects-grid {
   display: grid;
   gap: 1rem;
