@@ -14,9 +14,68 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_URL || "https://jumpstone4477.de";
+
 export const metadata: Metadata = {
-  title: "JumpStone",
-  description: "Portfolio and projects by JumpStone.",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "JumpStone",
+    template: "%s | JumpStone",
+  },
+  description:
+    "JumpStone: Developer portfolio showcasing open source projects in gaming, hardware, and web technologies. Explore Minecraft modding, Arduino projects, and web applications.",
+  keywords: [
+    "developer",
+    "portfolio",
+    "open source",
+    "minecraft modding",
+    "arduino",
+    "web development",
+    "JumpStone",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    siteName: "JumpStone",
+    title: "JumpStone | Developer Portfolio & Open Source Projects",
+    description:
+      "Discover open source projects in gaming, hardware, and web technologies",
+    images: [
+      {
+        url: `${baseUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "JumpStone - Developer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JumpStone | Developer Portfolio & Open Source Projects",
+    description:
+      "Discover open source projects in gaming, hardware, and web technologies",
+    images: [`${baseUrl}/og-image.png`],
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
 };
 
 const themeInitScript = `(() => {
@@ -44,6 +103,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "JumpStone",
+    url: baseUrl,
+    description:
+      "Developer showcasing open source projects in gaming, hardware, and web technologies",
+    sameAs: [
+      "https://github.com/jumpstone-gaming",
+      "https://github.com/akku-craft",
+      "https://modrinth.com/organization/jumpstone-gaming",
+    ],
+  };
+
   return (
     <html
       lang="en"
@@ -52,6 +125,10 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <ThemeModeProvider>

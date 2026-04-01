@@ -1,0 +1,34 @@
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = process.env.NEXT_PUBLIC_URL || "https://jumpstone4477.de";
+
+  const routes: MetadataRoute.Sitemap = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/code-of-conduct`,
+      lastModified: new Date("2024-01-01"),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/legal`,
+      lastModified: new Date("2024-01-01"),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+  ];
+
+  return routes;
+}

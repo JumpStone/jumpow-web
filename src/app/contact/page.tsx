@@ -7,7 +7,19 @@ export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact details protected by Cloudflare Turnstile.",
+  description:
+    "Get in touch with JumpStone. Contact information for software projects and collaborations, with privacy protection.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Contact JumpStone",
+    description:
+      "Get in touch for software projects, collaborations, and inquiries.",
+    type: "website",
+    url: "https://jumpstone4477.de/contact",
+  },
 };
 
 function getContactEmails() {

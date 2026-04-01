@@ -4,7 +4,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Legal | JumpStone",
-  description: "Legal information and contact details for this website.",
+  description:
+    "Legal information, privacy policy, and disclaimer for the JumpStone website.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Legal Information | JumpStone",
+    description: "Legal information and disclaimer for the JumpStone website.",
+    type: "website",
+    url: "https://jumpstone4477.de/legal",
+  },
 };
 
 export default function LegalPage() {

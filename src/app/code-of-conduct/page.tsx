@@ -4,7 +4,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Code of Conduct | JumpStone",
   description:
-    "Community guidelines for respectful and inclusive interaction across JumpStone spaces.",
+    "Community guidelines for respectful and inclusive interaction across JumpStone spaces and projects.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Code of Conduct | JumpStone",
+    description:
+      "Community guidelines for respectful and inclusive interaction across JumpStone spaces.",
+    type: "website",
+    url: "https://jumpstone4477.de/code-of-conduct",
+  },
 };
 
 export default function CodeOfConductPage() {
