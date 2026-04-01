@@ -2,7 +2,7 @@ import SiteFooter from "@/components/site-footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Code of Conduct",
+  title: "Code of Conduct | JumpStone",
   description:
     "Community guidelines for respectful and inclusive interaction across JumpStone spaces.",
 };

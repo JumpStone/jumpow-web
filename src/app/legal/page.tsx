@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Legal",
+  title: "Legal | JumpStone",
   description: "Legal information and contact details for this website.",
 };
 
