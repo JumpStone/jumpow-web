@@ -72,8 +72,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-4 rounded-base border-2 border-border bg-main px-4 py-3 text-sm text-main-foreground">
-          JumpStone Website © 2025 - 2026 by JumpStone. Licensed under CC
-          BY-NC-SA 4.0.
+          JumpStone Website © 2025 - 2026 by JumpStone. Licensed under GPL-3.0.
         </div>
       </div>
     </footer>
