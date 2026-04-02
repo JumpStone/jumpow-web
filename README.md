@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JumpStone Web
+
+Welcome to the official website for JumpStone.
+
+## About the Project
+
+This is a modern web application built with [Next.js](https://nextjs.org), designed to deliver a fast, accessible, and user-friendly experience. I use cutting-edge technologies such as TailwindCSS for styling and RadixUI components to build robust UI elements.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have Node.js installed on your system. I recommend using the latest LTS version.
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+### Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application. The page will automatically reload as you make changes to the code.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project follows Next.js App Router conventions:
 
-## Learn More
+- **`src/app/`** — Main application pages and layouts
+  - `page.tsx` — Homepage
+  - `layout.tsx` — Root layout
+  - `robots.ts` — SEO robots configuration
+  - `sitemap.ts` — XML sitemap generation
+  - Individual route directories for pages like `/contact`, `/legal`, and `/code-of-conduct`
 
-To learn more about Next.js, take a look at the following resources:
+- **`src/components/`** — Reusable React components
+  - UI components for common elements (buttons, cards, navigation)
+  - Layout components (header, footer, sections)
+  - Theme provider for dark/light mode support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **`src/lib/`** — Utility functions and helper modules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Building and Deployment
 
-## Deploy on Vercel
+### Build for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This creates an optimized production build in the `.next` directory.
+
+### Start Production Server
+
+```bash
+npm start
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+### Linting
+
+Run the linter to check code quality:
+
+```bash
+npm run lint
+```
+
+## Technology Stack
+
+- **Framework:** Next.js 16.2.2 with App Router
+- **UI Library:** React 19.2.4
+- **Component Library:** RadixUI for accessible components
+- **Styling:** TailwindCSS 4 with PostCSS
+- **Icons:** Lucide React
+- **Language:** TypeScript
+- **Linting:** ESLint
+
+## Key Features
+
+- Modern React architecture with server and client components
+- Fully responsive design with mobile-first approach
+- Dark mode support with theme switching
+- SEO-optimized with metadata and sitemap generation
+- Accessible UI components from RadixUI
+- Fast page loads and optimal performance with Next.js optimizations
+
+## Contributing
+
+We welcome contributions! If you'd like to improve the website, please feel free to submit pull requests or open issues to discuss proposed changes.
+
+## License
+
+This project is licensed under GNU GPLv3. For more information, visit the [LICENSE File](LICENSE)
+
+## Support
+
+For questions, issues, or feedback about this website, please reach out through my [contact page](https://jumpstone4477.de/contact).
