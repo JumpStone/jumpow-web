@@ -11,7 +11,7 @@ export default function SiteFooter() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="underline underline-offset-2" href="#">
+                <a className="underline underline-offset-2" href="/">
                   Home
                 </a>
               </li>

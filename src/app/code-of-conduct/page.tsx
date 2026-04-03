@@ -39,10 +39,12 @@ export default function CodeOfConductPage() {
             Our Pledge
           </h2>
           <p className="text-sm leading-relaxed md:text-base">
-            As maintainers, we are committed to providing a welcoming, safe, and
-            respectful environment for everyone, regardless of experience level,
-            identity, orientation, disability, appearance, age, ethnicity,
-            religion, or nationality.
+            I as the maintainer of all JumpStone and JumpStone-Gaming projects,
+            am committed to providing a friendly, safe, and welcoming
+            environment for all, regardless of level of experience, gender
+            identity and expression, sexual orientation, disability, personal
+            appearance, body size, race, ethnicity, age, religion, or
+            nationality.
           </p>
         </section>
 
@@ -53,26 +55,40 @@ export default function CodeOfConductPage() {
 
           <div className="mb-4 rounded-base border-2 border-border bg-main p-4 text-main-foreground shadow-shadow">
             <h3 className="mb-2 text-sm font-heading uppercase tracking-wide">
-              Positive Behavior
+              ✓ Examples of behavior that contributes to a positive environment
+              include:
             </h3>
             <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed md:text-base">
               <li>Using welcoming and inclusive language.</li>
-              <li>Respecting different viewpoints and experiences.</li>
-              <li>Accepting constructive feedback professionally.</li>
-              <li>Prioritizing what benefits the broader community.</li>
-              <li>Showing empathy toward other members.</li>
+              <li>Being respectful of differing viewpoints and experiences.</li>
+              <li>Gracefully accepting constructive criticism.</li>
+              <li>Focusing on what is best for the community.</li>
+              <li>Showing empathy towards other community members.</li>
             </ul>
           </div>
 
           <div className="rounded-base border-2 border-border bg-[#ff4b2a] p-4 text-black shadow-shadow">
             <h3 className="mb-2 text-sm font-heading uppercase tracking-wide">
-              Unacceptable Behavior
+              ✗ Examples of unacceptable behavior include:
             </h3>
             <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed md:text-base">
-              <li>Sexualized language, imagery, or unwanted advances.</li>
-              <li>Insults, harassment, trolling, or personal attacks.</li>
-              <li>Publishing private information without permission.</li>
-              <li>Any conduct inappropriate in a professional environment.</li>
+              <li>
+                The use of sexualized language or imagery and unwelcome sexual
+                attention or advances.
+              </li>
+              <li>
+                Trolling, insulting/derogatory comments, and personal or
+                political attacks.
+              </li>
+              <li>Public or private harassment.</li>
+              <li>
+                Publishing others' private information, such as a physical or
+                electronic address, without explicit permission.
+              </li>
+              <li>
+                Other conduct which could reasonably be considered inappropriate
+                in a professional setting.
+              </li>
             </ul>
           </div>
         </section>
@@ -82,9 +98,13 @@ export default function CodeOfConductPage() {
             Scope
           </h2>
           <p className="text-sm leading-relaxed md:text-base">
-            This Code of Conduct applies across all project spaces managed under
-            JumpStone and JumpStone-Gaming, including public representation such
-            as official emails, social accounts, and community events.
+            This Code of Conduct applies within all project spaces managed by
+            JumpStone and JumpStone-Gaming, and it also applies when an
+            individual is representing the project or its community in public
+            spaces. Examples of representing a project or community include
+            using an official project e-mail address, posting via an official
+            social media account, or acting as an appointed representative at an
+            online or offline event.
           </p>
         </section>
 
@@ -93,18 +113,24 @@ export default function CodeOfConductPage() {
             Enforcement
           </h2>
           <p className="mb-3 text-sm leading-relaxed md:text-base">
-            Maintainers are responsible for interpreting and enforcing these
-            standards and for taking fair corrective action when needed.
+            Responsibilities for clarifying the standards of acceptable behavior
+            and taking appropriate and fair corrective action in response to any
+            instances of unacceptable behavior lie with the project maintainers.
           </p>
           <div className="rounded-base border-2 border-border bg-secondary-background p-4">
             <p className="text-sm leading-relaxed md:text-base">
-              To report concerns, contact:
-              <a
-                href="mailto:hi@jumpstone4477.de"
-                className="ml-1 font-heading underline underline-offset-2"
-              >
-                hi@jumpstone4477.de
+              If you experience or witness unacceptable behavior, please report
+              it to the maintainers via the{" "}
+              <a style={{ textDecoration: "underline" }} href="/contact">
+                contact page
               </a>
+              .
+            </p>{" "}
+            <p>
+              All complaints will be reviewed and investigated and will result
+              in a response that is deemed necessary and appropriate to the
+              circumstances. The project team is obligated to maintain
+              confidentiality with regard to the reporter of an incident.
             </p>
           </div>
         </section>
@@ -114,14 +140,23 @@ export default function CodeOfConductPage() {
             Attribution
           </h2>
           <p className="text-sm leading-relaxed md:text-base">
-            This policy is based on Contributor Covenant principles.
+            This Code of Conduct is adapted from the{" "}
             <a
               href="https://www.contributor-covenant.org"
               target="_blank"
               rel="noreferrer"
               className="ml-1 font-heading underline underline-offset-2"
             >
-              Learn more
+              Contributor Covenant
+            </a>
+            , version 2.1, available at
+            <a
+              href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html"
+              target="_blank"
+              rel="noreferrer"
+              className="ml-1 font-heading underline underline-offset-2"
+            >
+              https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
             </a>
             .
           </p>
