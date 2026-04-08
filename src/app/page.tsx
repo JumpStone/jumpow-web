@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import GitHubSections from "@/components/github-sections";
+import GitHubStats from "@/components/github-section";
 import SectionHeading from "@/components/section-heading";
 import SiteFooter from "@/components/site-footer";
 import { ArrowUpRight } from "lucide-react";
@@ -101,8 +101,9 @@ export default function Page() {
           Hi, I&apos;m <span className="text-foreground">Henry</span>.
         </h1>
         <p className="max-w-2xl text-base leading-relaxed">
-          Software developer and hardware enthusiast from Germany
+          Young self taught software developer from Germany
         </p>
+        <GitHubStats username="Jumpstone" />
       </section>
 
       <section
@@ -150,17 +151,12 @@ export default function Page() {
       >
         <SectionHeading index="03" title="Featured Projects" />
         <ProjectGrid projects={featuredProjects} />
-      </section>
 
-      <section
-        id="other-projects"
-        className="mb-8 rounded-base border border-border/30 bg-secondary-background p-6 shadow-sm"
-      >
-        <SectionHeading index="04" title="Other Projects" />
-        <ProjectGrid projects={otherProjects} />
+        <div className="mt-12">
+          <SectionHeading index="04" title="Other stuff I do" />
+          <ProjectGrid projects={otherProjects} />
+        </div>
       </section>
-
-      <GitHubSections username="Jumpstone" />
 
       <SiteFooter />
     </main>

@@ -13,7 +13,7 @@ export default async function GitHubSections({
   username,
   visibleRepoLimit = 8,
 }: GitHubSectionsProps) {
-  const { profile, repos, hasError } = await getGitHubData(username);
+  const { profile, repos, commits, hasError } = await getGitHubData(username);
   const repoProjects = (repos ?? []).slice(0, visibleRepoLimit);
 
   return (
@@ -35,8 +35,10 @@ export default async function GitHubSections({
               <p className="text-3xl font-heading">{profile.followers}</p>
             </div>
             <div className="rounded-base border border-border/30 bg-main p-4 text-main-foreground shadow-sm">
-              <p className="font-mono text-xs">Following</p>
-              <p className="text-3xl font-heading">{profile.following}</p>
+              <p className="font-mono text-xs">Commits</p>
+              <p className="text-3xl font-heading">
+                {commits !== null ? commits : "N/A"}
+              </p>
             </div>
           </div>
         ) : (

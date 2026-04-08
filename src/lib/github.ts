@@ -18,6 +18,7 @@ export type GitHubRepo = {
 type GitHubData = {
   profile: GitHubProfile | null;
   repos: GitHubRepo[] | null;
+  commits: number | null;
   hasError: boolean;
 };
 
@@ -40,7 +41,7 @@ export async function getGitHubData(
 ): Promise<GitHubData> {
   const headers = createGitHubHeaders();
 
-  const [profileResponse, reposResponse] = await Promise.all([
+  const [profileResponse, reposResponse, commitsResponse] = await Promise.all([
     fetch(`https://api.github.com/users/${username}`, {
       headers,
       next: { revalidate: 60 * 30 },
@@ -52,6 +53,13 @@ export async function getGitHubData(
         next: { revalidate: 60 * 30 },
       },
     ),
+    fetch(`https://api.github.com/search/commits?q=author:${username}`, {
+      headers: {
+        ...headers,
+        Accept: "application/vnd.github.cloak-preview+json",
+      },
+      next: { revalidate: 60 * 30 },
+    }),
   ]);
 
   const profile = profileResponse.ok
@@ -67,9 +75,13 @@ export async function getGitHubData(
         )
     : null;
 
+  const commitsData = commitsResponse.ok ? await commitsResponse.json() : null;
+  const commits = commitsData ? commitsData.total_count : null;
+
   return {
     profile,
     repos,
+    commits,
     hasError: !profileResponse.ok || !reposResponse.ok,
   };
 }
