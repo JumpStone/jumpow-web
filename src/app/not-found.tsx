@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 md:px-8">
-      
-
       <div className="flex flex-1 flex-col justify-center gap-8 py-12 md:py-16">
         <section className="rounded-base border border-border/30 bg-main p-6 text-main-foreground shadow-sm md:p-8">
           <p className="mb-3 inline-flex items-center gap-2 rounded-base border border-main-foreground/40 bg-main-foreground/10 px-3 py-1 text-xs font-heading">
@@ -79,10 +77,10 @@ export default function NotFound() {
                 </span>
               </Link>
               <Link
-                href="/legal"
+                href="/legal/imprint"
                 className="inline-flex items-center justify-between rounded-base border border-border/30 bg-background px-3 py-2 text-sm font-heading shadow-sm transition-opacity hover:opacity-80"
               >
-                Legal notice
+                Imprint
                 <span
                   aria-hidden="true"
                   className="font-mono text-xs text-foreground/70"

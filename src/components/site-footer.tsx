@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThemeModeSelect from "@/components/theme-mode-select";
 
 export default function SiteFooter() {
@@ -9,14 +10,14 @@ export default function SiteFooter() {
             <h3 className="mb-3 text-sm font-heading">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="underline underline-offset-2" href="/">
+                <Link className="underline underline-offset-2" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="underline underline-offset-2" href="/contact">
+                <Link className="underline underline-offset-2" href="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -25,17 +26,28 @@ export default function SiteFooter() {
             <h3 className="mb-3 text-sm font-heading">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="underline underline-offset-2" href="/legal">
-                  Legal
-                </a>
+                <Link
+                  className="underline underline-offset-2"
+                  href="/legal/imprint"
+                >
+                  Imprint
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  className="underline underline-offset-2"
+                  href="/legal/privacy"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
                   className="underline underline-offset-2"
                   href="/code-of-conduct"
                 >
                   Code of Conduct
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -23,7 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/legal`,
+      url: `${baseUrl}/legal/imprint`,
+      lastModified: new Date("2024-01-01"),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/legal/privacy`,
       lastModified: new Date("2024-01-01"),
       changeFrequency: "yearly",
       priority: 0.5,
