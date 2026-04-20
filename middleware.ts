@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  if (request.nextUrl.hostname !== "jumpstone.is-a.dev") {
+  if (request.nextUrl.hostname !== "jumpstone4477-de.vercel.app") {
     return NextResponse.next();
   }
 
