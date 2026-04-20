@@ -1,7 +1,13 @@
 import Link from "next/link";
+import { headers } from "next/headers";
 import ThemeModeSelect from "@/components/theme-mode-select";
 
-export default function SiteFooter() {
+export default async function SiteFooter() {
+  const host = (await headers()).get("host")?.toLowerCase() ?? "";
+  const isSubsiteDomain =
+    host === "jumpstone.is-a.dev" || host.endsWith(".vercel.app");
+  const homeHref = isSubsiteDomain ? "https://jumpstone4477.de/" : "/";
+
   return (
     <footer className="mt-8 border-t border-border/30 bg-secondary-background ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
       <div className="mx-auto w-full max-w-6xl px-4 py-6 md:px-8">
@@ -10,9 +16,18 @@ export default function SiteFooter() {
             <h3 className="mb-3 text-sm font-heading">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link className="underline underline-offset-2" href="/">
-                  Home
-                </Link>
+                {isSubsiteDomain ? (
+                  <a className="underline underline-offset-2" href={homeHref}>
+                    Home
+                  </a>
+                ) : (
+                  <Link
+                    className="underline underline-offset-2"
+                    href={homeHref}
+                  >
+                    Home
+                  </Link>
+                )}
               </li>
               <li>
                 <Link className="underline underline-offset-2" href="/contact">
