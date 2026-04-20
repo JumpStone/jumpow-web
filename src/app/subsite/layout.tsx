@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import SiteHeader from "@/components/site-header";
+import SiteHeader from "@/components/subsite/site-header";
 import { ThemeModeProvider } from "@/components/theme-mode-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,13 +16,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_URL || "https://jumpstone4477.de";
+const baseUrl =
+  process.env.NEXT_PUBLIC_SUBSITE_URL || "https://jumpstone.is-a.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "JumpStone",
-    template: "%s | JumpStone",
+    default: "JumpStone Dev",
+    template: "%s | JumpStone Dev",
   },
   description:
     "JumpStone: Developer portfolio showcasing open source projects in gaming, hardware, and web technologies. Explore Minecraft modding, Arduino projects, and web applications.",
@@ -142,7 +143,7 @@ export default function RootLayout({
         <ThemeModeProvider>
           <SiteHeader />
 
-          <div className="h-28 md:h-32" aria-hidden="true" />
+          <div className="h-1 md:h-1" aria-hidden="true" />
 
           {children}
         </ThemeModeProvider>
