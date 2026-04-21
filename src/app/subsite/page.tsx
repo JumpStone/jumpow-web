@@ -70,8 +70,13 @@ export default function SubSite() {
         <h1 className="mb-3 text-3xl font-heading leading-tight sm:text-5xl">
           Hi, I&apos;m <span className="text-foreground">Henry</span>.
         </h1>
+        <h2 className="text-xl font-semibold">Inside the Lab</h2>
         <p className="max-w-2xl text-base leading-relaxed">
-          Young self taught software developer from Germany
+          This is my Developer Portfolio. It contains the technical details
+          behind my projects, code snippets, implementation details, and more.
+          It&apos;s a behind-the-scenes look at what I build, how I build it,
+          and the tools and technologies I use. It&apos;s for fellow developers,
+          tech enthusiasts, or anyone curious.
         </p>
         <GitHubStats username="Jumpstone" />
       </section>
