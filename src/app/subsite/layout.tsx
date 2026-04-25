@@ -22,14 +22,14 @@ const baseUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    absolute: "Henry aka JumpStone Dev",
+    absolute: "HenryMM Dev Portfolio",
   },
   description:
     "My dev portfolio is a technical deep dive into my projects, with code snippets, implementation details, and more.",
   keywords: [
     "technical deep dive",
     "code snippets",
-    "Henry aka JumpStone Dev Portfolio",
+    "HenryMM Dev Portfolio",
     "developer",
     "portfolio",
     "projects",

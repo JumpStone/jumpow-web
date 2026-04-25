@@ -10,17 +10,17 @@ type SiteHeaderProps = {
 
 const socialLinks = [
   {
-    href: "https://github.com/jumpstone",
+    href: "https://github.com/henrymmey",
     iconName: "github",
     label: "GitHub",
   },
   {
-    href: "https://codeberg.org/jumpstone",
+    href: "https://codeberg.org/henrymmey",
     iconName: "codeberg",
     label: "Codeberg",
   },
   {
-    href: "https://modrinth.com/organization/jumpstone-gaming",
+    href: "https://modrinth.com/user/HenryMMey",
     iconName: "modrinth",
     label: "Modrinth",
   },
@@ -28,7 +28,7 @@ const socialLinks = [
 
 export default function SiteHeader({
   logoSrc = "/logo.png",
-  siteName = "JumpStone",
+  siteName = "HenryMM",
 }: SiteHeaderProps) {
   const { effectiveMode } = useThemeMode();
   const [isCompact, setIsCompact] = useState(false);

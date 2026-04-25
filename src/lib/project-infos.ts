@@ -60,7 +60,7 @@ const projectInfos: ProjectInfo[] = [
     links: [
       {
         label: "Repository",
-        href: "https://github.com/JumpStone/link-shortener",
+        href: "https://github.com/henrymmey/link-shortener",
       },
     ],
     priority: 3,

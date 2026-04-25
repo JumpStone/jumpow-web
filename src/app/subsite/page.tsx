@@ -78,7 +78,7 @@ export default function SubSite() {
           and the tools and technologies I use. It&apos;s for fellow developers,
           tech enthusiasts, or anyone curious.
         </p>
-        <GitHubStats username="Jumpstone" />
+        <GitHubStats username="henrymmey" />
       </section>
 
       <section

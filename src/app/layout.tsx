@@ -21,8 +21,8 @@ const baseUrl = process.env.NEXT_PUBLIC_URL || "https://jumpstone4477.de";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Henry aka JumpStone",
-    template: "%s | Henry aka JumpStone",
+    default: "HenryMM",
+    template: "%s | HenryMM",
   },
   description:
     "My personal portfolio, focused on what I build, what I can do, and the projects, tools, and technologies I work with.",

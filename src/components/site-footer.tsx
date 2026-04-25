@@ -132,7 +132,7 @@ export default async function SiteFooter() {
               <li>
                 <a
                   className="underline underline-offset-2"
-                  href="https://github.com/jumpstone"
+                  href="https://github.com/henrymmey"
                   target="_blank"
                 >
                   GitHub
@@ -141,7 +141,7 @@ export default async function SiteFooter() {
               <li>
                 <a
                   className="underline underline-offset-2"
-                  href="https://codeberg.org/jumpstone"
+                  href="https://codeberg.org/henrymmey"
                   target="_blank"
                 >
                   Codeberg
@@ -150,7 +150,7 @@ export default async function SiteFooter() {
               <li>
                 <a
                   className="underline underline-offset-2"
-                  href="https://modrinth.com/user/JumpStone"
+                  href="https://modrinth.com/user/HenryMMey"
                   target="_blank"
                 >
                   Modrinth
@@ -170,7 +170,7 @@ export default async function SiteFooter() {
         </div>
 
         <div className="mt-4 rounded-base border border-border/30 bg-main px-4 py-3 text-sm text-main-foreground">
-          JumpStone Website © 2025 - 2026 by JumpStone. Licensed under GPL-3.0.
+          HenryMM Website © 2025 - 2026 by Henry Meyer. Licensed under GPL-3.0.
         </div>
       </div>
     </footer>
