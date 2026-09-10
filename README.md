@@ -1,14 +1,15 @@
 # henrymeyer.de
 
-Monorepo for [henrymeyer.de](https://henrymeyer.de), managed with [pnpm](https://pnpm.io) workspaces.
+Monorepo for [henrymeyer.de](https://henrymeyer.de), [gaming.henrymeyer.de](https://gaming.henrymeyer.de) and [hmt-clan.vercel.app](https://hmt-clan.vercel.app) managed with [pnpm](https://pnpm.io) workspaces.
 
 ## Structure
 
 ```
 .
 ├── apps/
-│   ├── main-site/   # Next.js web application
-│   └── hmt-clan/    # Next.js web application (uses @repo/ui)
+│   ├── main-site/    # Next.js web application
+│   ├── hmt-clan/     # Next.js web application
+│   └── gaming-site/  # Astro web application with Starlight
 └── packages/
     └── ui/          # Shared UI components (@repo/ui)
 ```
@@ -35,6 +36,13 @@ pnpm dev:hmt-clan
 
 # Build the hmt-clan site
 pnpm build:hmt-clan
+
+# Start the gaming-site site in development mode
+pnpm dev:gaming-site
+
+# Build the gaming-site site
+pnpm build:gaming-site
+
 ```
 
 You can also run commands scoped to a specific workspace package:
