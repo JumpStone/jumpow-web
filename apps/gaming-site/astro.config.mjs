@@ -15,6 +15,11 @@ export default defineConfig({
       },
       social: [
         {
+          icon: "discord",
+          label: "Discord",
+          href: "https://discord.gg/EHU4YMaHGT",
+        },
+        {
           icon: "github",
           label: "GitHub",
           href: "https://github.com/henrymmey",
